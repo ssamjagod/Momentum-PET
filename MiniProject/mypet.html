@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+        })
+        $(document).ready(function () {
+            $("#footer").load("footer.html");
+        })
+        
+    </script>
+    <link rel="stylesheet" href="./CSS/mypet.CSS">
+</head>
+<body>
+    <div id='header'></div>
+    <span><img id = "it" img src = "./PIC/m1.png" style="padding-left: 50px;"></span>
+    <hr>
+    <div id = "m1">
+        <table>
+            <thead>
+            <tr>
+                <th><input type="checkbox" id="allChk" onchange="allsel(this)"></th>
+                <th><b>사진</b></th>
+                <th><b>견종</b></th>
+                <th><b>이름</b></th>
+                <th><b>생년월일</b></th>
+                <th><b>입양비</b></th>
+                <th><b>삭제</b></th>
+            </tr>
+            </thead>
+            <tbody id = 'pet__list'>
+            <tr>
+                <td><input type="checkbox" class="Chk"></td>
+                <td><img class="pic1" src="./PIC/d2.png" width="200" height="200"></td>
+                <td>비숑프리제</td>
+                <td>눈꽃</td>
+                <td>24년 1월 3일</td>
+                <td>100만원 [카드할부가능]</td>
+                <td><input type = 'button' value = 'remove' onclick="delRow()"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="Chk"></td>
+                <td><img class="pic1" src="./PIC/d3.png" width="200" height="200"></td>
+                <td>웰시코기</td>
+                <td>연두</td>
+                <td>24년 2월 4일</td>
+                <td>100만원 [카드할부가능]</td>
+                <td><input type = 'button' value = 'remove' onclick="delRow()"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="Chk"></td>
+                <td><img class="pic1" src="./PIC/d4.png" width="200" height="200"></td>
+                <td>포메라니안</td>
+                <td>소금</td>
+                <td>24년 3월 23일</td>
+                <td>140만원 [카드할부가능]</td>
+                <td><input type = 'button' value = 'remove' onclick="delRow()"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="Chk"></td>
+                <td><img class="pic1" src="./PIC/d7.png" width="200" height="200"></td>
+                <td>폼스키</td>
+                <td>진주</td>
+                <td>24년 3월 17일</td>
+                <td>240만원 [카드할부가능]</td>
+                <td><input type = 'button' value = 'remove' onclick="delRow()"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="Chk"></td>
+                <td><img class="pic1" src="./PIC/d10.png" width="200" height="200"></td>
+                <td>시바이누</td>
+                <td>포동</td>
+                <td>24년 3월 13일</td>
+                <td>140만원 [카드할부가능]</td>
+                <td><input type = 'button' value = 'remove' onclick="delRow()"></td>
+            </tr>
+            </tbody>
+        </table>
+        <div id = 'mbt' class="container">
+            <a href="./post.html" title="Button push lightblue" class="button btnPush btnLightBlue" style = "text-decoration: none;">입양신청</a>
+        </div>
+    </div>
+    <div id ='footer'>
+
+    </div>
+    
+</body>
+<script>
+function delRow() {
+    
+    table = document.querySelector('#pet__list')
+    
+    arr = new Array();
+    for (let j = 0; j < table.rows.length; j++) {
+      arr[j] = document.querySelectorAll(".Chk")[j].checked
+
+    }
+
+    for (let i = table.rows.length; i >= 0; i--) {
+      if (arr[i] == true) {
+        table.deleteRow(i);
+
+      }
+    }
+  }
+
+  function allsel(a) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = a.checked // unchecked
+    })
+  }
+  
+  function insert() {
+
+  }
+</script>
+</html>

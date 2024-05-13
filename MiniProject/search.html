@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+        })
+        $(document).ready(function () {
+            $("#footer").load("footer.html");
+        })
+
+    </script>
+    <link rel="stylesheet" href="./CSS/search.CSS">
+</head>
+
+<body>
+    <div id='header'></div>
+    <span><img src="./PIC/s1.png"></span>
+    <hr>
+    <div id='s1'>
+
+        <div id='s2'>
+            <div id="ser">
+                <form class="search-box" action="" method="get">
+                    <input class="search-txt" type="text" name="" placeholder="검색어를 입력하세요." size = 20;>
+                    <button class="search-btn" type="submit">검색</button>
+                </form>
+            </div>
+            <table>
+                <thead id='stable'>
+                    <tr>
+                        <th><b>사진</b></th>
+                        <th><b>견종</b></th>
+                        <th><b>이름</b></th>
+                        <th><b>생년월일</b></th>
+                        <th><b>입양비</b></th>
+                        <th><b>추가</b></th>
+                    </tr>
+                </thead>
+                <tbody id='pet__list'>
+                    <tr>
+
+                        <td><img class="pic1" src="./PIC/d2.png" width="100" height="100"></td>
+                        <td>비숑프리제</td>
+                        <td>눈꽃</td>
+                        <td>24/01/03</td>
+                        <td>100만원 <br>[카드할부가능]</td>
+                        <th><a onclick="addRow(this)"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557" />
+                                </svg></a></th>
+                    </tr>
+                    <tr>
+
+                        <td><img class="pic1" src="./PIC/d3.png" width="100" height="100"></td>
+                        <td>웰시코기</td>
+                        <td>연두</td>
+                        <td>24/02/04</td>
+                        <td>100만원 <br>[카드할부가능]</td>
+                        <th><a onclick="addRow(this)"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557" />
+                                </svg></a></th>
+                    </tr>
+                    <tr>
+
+                        <td><img class="pic1" src="./PIC/d4.png" width="100" height="100"></td>
+                        <td>포메라니안</td>
+                        <td>소금</td>
+                        <td>24/03/23</td>
+                        <td>140만원 <br>[카드할부가능]</td>
+                        <th><a onclick="addRow(this)"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557" />
+                                </svg></a></th>
+                    </tr>
+                    <tr>
+
+                        <td><img class="pic1" src="./PIC/d7.png" width="100" height="100"></td>
+                        <td>폼스키</td>
+                        <td>진주</td>
+                        <td>24/03/17</td>
+                        <td>240만원 <br>[카드할부가능]</td>
+                        <th><a onclick="addRow(this)"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557" />
+                                </svg></a></th>
+                    </tr>
+                    <tr>
+                        <td><img class="pic1" src="./PIC/d10.png" width="100" height="100"></td>
+                        <td>시바이누</td>
+                        <td>포동</td>
+                        <td>24/03/13</td>
+                        <td>140만원 <br>[카드할부가능]</td>
+                        <th><a onclick="addRow(this)"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                    fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557" />
+                                </svg></a></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id='s4'>
+            <span id='spanh1'>
+                <h1><b>관심 리스트</b></h1>
+            </span>
+            <div class ='containert'>
+            <table id='lovelist'>
+                <thead>
+                    <tr stlye ="overflow:auto">
+                        <th><b>사진</b></th>
+                        <th><b>견종</b></th>
+                        <th><b>이름</b></th>
+                        <th><b>생년월일</b></th>
+                        <th><b>입양비</b></th>
+                        <th><input type="checkbox" id="allChk" onchange="allsel(this)"></th>
+                    </tr>
+                </thead>
+                <tbody id='pet__list1'>
+
+                </tbody>
+            </table>
+            </div>
+            <button id = 'delbut' onclick="delRow(this)">삭제하기</button>
+        </div>
+        
+        </div>
+        
+    </div>
+
+    <div id='footer'>
+
+    </div>
+
+</body>
+<script>
+    function addRow(a) {
+        const table = document.querySelector('#pet__list1')
+        const temp = a.closest('tr')
+        const clontemp = temp.cloneNode(true)
+        newRow = table.insertRow(0);
+        newRow.innerHTML = clontemp.innerHTML;
+        newRow.deleteCell(5);
+        let newcell = newRow.insertCell(5)
+        newcell.innerHTML = '<input class ="cbox" type="checkbox">'
+        
+    }
+
+    function delRow(a) {
+        
+        table = document.querySelector('#pet__list1')
+        arr = new Array();
+        for (let j = 0; j < table.rows.length; j++) {
+            arr[j] = document.querySelectorAll(".cbox")[j].checked
+
+        }
+
+        for (let i = table.rows.length; i >= 0; i--) {
+            if (arr[i] == true) {
+                table.deleteRow(i);
+            }
+        }
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = a.unchecked
+        })
+    }
+
+    function allsel(a) {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = a.checked
+        })
+    }
+</script>
+
+</html>

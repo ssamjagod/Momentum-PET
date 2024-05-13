@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+        })
+        $(document).ready(function () {
+            $("#footer").load("footer.html");
+        })
+
+    </script>
+    <link rel="stylesheet" href="./CSS/post.CSS">
+</head>
+
+<body>
+    <div id='header'></div>
+    <span><img src="./PIC/p1.png"></span>
+    <hr>
+    <div id='p1'>
+        <div id='p2'>
+            <span>
+                <h1><b>입양신청</b></h1>
+            </span>
+            <div id="tdiv">
+
+                <table id='table'>
+                    <form>
+                        <tr>
+                            <td>이름 <nobr>*필수</nobr></td>
+                            <td><input id="idtext" type="text" name="name" style="width: 400px" required /></td>
+                        </tr>
+                        <tr>
+                            <td>전화번호 <nobr>*필수</nobr></td>
+                            <td><input id = "teltext" type="tel" name="tel" style="width: 400px" placeholder="(-없이 숫자만 입력)" required /></td>
+                        </tr>
+                        <tr>
+                            <td>주소</td>
+                            <td>
+
+
+
+                                <div class="signUp-input-area">
+                                    <input type="text" name="memberAddress" placeholder="우편번호" maxlength="6"
+                                        id="sample6_postcode" style="margin-left: -38px;" size="35px">
+
+                                    <button type="button" onclick="sample6_execDaumPostcode()">검색</button>
+                                </div>
+
+
+                                <div class="signUp-input-area">
+                                    <input type="text" name="memberAddress" placeholder="도로명/지번 주소" id="sample6_address"
+                                        style="margin-left: -90px;" size="35px">
+                                </div>
+
+
+                                <div class="signUp-input-area">
+                                    <input type="text" name="memberAddress" placeholder="상세 주소"
+                                        id="sample6_detailAddress" style="margin-left: -90px;" size="35px">
+                                </div>
+
+
+
+                            </td>
+
+
+                            </section>
+
+
+                            </main>
+
+
+
+                        </tr>
+                        <tr>
+                            <td>성별</td>
+                            <td>
+                                <input type="radio" value="m" name="gender">남
+                                <input type="radio" value="w" name="gender">여
+                            </td>
+                        </tr>
+
+                        <tr id="picture">
+                            <td>희망 반려견</td>
+                            <td>
+                                <select name="items1" style="width: 400px">
+                                    <option value="0">시바이누: 코로</option>
+                                    <option value="1">비숑프리제: 눈꽃</option>
+                                    <option value="2">웰시코기: 연두</option>
+                                    <option value="3">포메라니안: 소금</option>
+                                    <option value="4">푸들: 티나</option>
+                                    <option value="5">말티푸: 쪼리</option>
+                                    <option value="6">폼스키: 진주</option>
+                                    <option value="7">요크셔테리어: 쵸비</option>
+                                    <option value="8">프렌치불독: 찹쌀</option>
+                                    <option value="9">시바이누: 포동</option>
+                                    <option value="10">말티즈: 토롱</option>
+                                    <option value="11">말티푸: 아구</option>
+                                    <option value="12">시바견: 코로</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>신청 이유</td>
+                            <td>
+                                <textarea style="width: 400px; height: 300px;" placeholder="신청이유: "></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="신청하기" onclick="chk()"></input>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div id='footer'></div>
+
+</body>
+
+<jsp:include page="/WEB-INF/views/common/footer.jsp" />
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function (data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+
+    function chk() {
+        if(document.querySelector('#idtext').value != "" && document.querySelector('#teltext').value != "") {
+            alert('신청완료')
+        }
+        else {
+            alert('필수사항 입력바랍니다.')
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./PIC/logo.png">
+</head>
+<link rel="stylesheet" href="./CSS/header.CSS">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+<body>
+
+    <header style="padding-top: 0px;">
+        <div id="title">
+            <a href="./main.html" style="text-decoration: none;">
+                <p id='t1'>Momentum PET</p>
+            </a>
+            <a href="javascript:join();" style="text-decoration: none">
+                <div class='user'><img src="PIC/join.png" width="50px" height="50px">
+                    <h6 class='u1'>Join</h6>
+                </div>
+            </a>
+            <a href="javascript:login();" style="text-decoration: none;">
+                <div class='user'><img src="PIC/login.png" width="50px" height="50px">
+                    <h6 class='u1'>Login</h6>
+                </div>
+            </a>
+        </div>
+        <nav id='menu'>
+            <a href="./intro.html" style="text-decoration: none;">
+                <h5 class='m'><b>소개</b></h5>
+            </a>
+            <a href="./understand.html" style="text-decoration: none;">
+                <h5 class='m'><b>애완동물 이해하기</b></h5>
+            </a>
+            <a href="./allList.html" style="text-decoration: none;">
+                <h5 class='m'><b>반려견보기</b></h5>
+            </a>
+            <a href="./post.html" style="text-decoration: none;">
+                <h5 class='m'><b>입양신청</b></h5>
+            </a>
+            <a href="./mypet.html" style="text-decoration: none;">
+                <h5 class='m'><b>관심반려견</b></h5>
+            </a>
+            <a href="./search.html" style="text-decoration: none;">
+                <h5 class='m'><b>반려견검색</b></h5>
+            </a>
+        </nav>
+        <div id="back">
+            <div class="loginbox">
+                <div class="login">
+                    <h2>Log-in</h2>
+                    <div class="login_id">
+                        <h4>E-mail</h4>
+                        <input type="email" name="" id="" placeholder="ID">
+                    </div>
+                    <div class="login_pw">
+                        <h4>Password</h4>
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Login" onclick="afterLogin()">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="joinbox">
+                <div class="login">
+                    <h2>Sign-In</h2>
+                    <div class="login_id">
+                        <h4>E-mail</h4>
+                        <input type="email" name="" id="" placeholder="ID">
+                    </div>
+                    <div class="login_pw">
+                        <h4>Password</h4>
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Sign-In" onclick="afterJoin()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+<script>
+    function login() {
+        $(document).ready(function () {
+
+            document.querySelector(".loginbox").style.display = "flex";
+            document.querySelector("#back").style.display = "block";
+        })
+    }
+    function join() {
+        $(document).ready(function () {
+            document.querySelector(".joinbox").style.display = "flex";
+            document.querySelector("#back").style.display = "block";
+        })
+    }
+    function afterLogin() {
+        alert('로그인되었습니다.')
+        document.querySelector(".loginbox").style.display = "none";
+        document.querySelector("body").style.opacity = 1;
+        document.querySelector("#back").style.display = "none";
+
+    }
+    function afterJoin() {
+        alert('회원가입되었습니다..')
+        document.querySelector(".joinbox").style.display = "none";
+        document.querySelector("body").style.opacity = 1;
+        document.querySelector("#back").style.display = "none";
+    }
+
+</script>
+
+
+</html>

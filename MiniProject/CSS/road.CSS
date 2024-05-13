@@ -1,0 +1,33 @@
+.map{
+   
+    top: 10px;
+    display: block;
+    height: 800px;
+    padding-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 300px;
+}
+
+#rtitle{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+#rtitle h1{
+    font-family:sans-serif;
+}
+#tranpic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    height: 800px;
+    
+}
+
+#it {
+    display: block;
+    width: 100%;
+    height: 280px;
+}

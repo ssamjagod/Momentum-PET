@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+        })
+        $(document).ready(function () {
+            $("#footer").load("footer.html");
+        })
+        $(document).ready(function () {
+            $("#introbase").load("introbase.html");
+        })
+    </script>
+    <link rel="stylesheet" href="./CSS/road.CSS">
+</head>
+<body>
+    <div id='header'></div>
+    <div id = 'introbase'></div>
+    <div id = 'rtitle'><h1><string>오시는 길</string></h1></div>
+<div id = 'aa'>
+<div id="daumRoughmapContainer1714700289841" class="root_daum_roughmap root_daum_roughmap_landing map"></div>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script realmap" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</div>
+<div id = 'tranpic'><img src = "./PIC/교통.PNG" width="1000px" height="600px"></div>
+
+
+    <div id ='footer'></div>
+    
+</body>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1714700289841",
+		"key" : "2j8h6",
+		"mapWidth" : "1100",
+		"mapHeight" : "600"
+        
+	}).render();
+</script>
+</html>
