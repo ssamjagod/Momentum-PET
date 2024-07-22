@@ -1,7 +1,7 @@
 # Momentum-PET
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/e5a7f162-f7f7-4f61-ac8a-13d6931cd6f1">
+<img src="https://github.com/user-attachments/assets/35335986-fd47-426c-94c1-54707a99dd46" width = "700" height = "500">
 </div>
 <br>
 수행과제2 : Frontend 개발, JavaScript 프로그래밍, 웹페이지 동적 제어, DOM 조작
@@ -50,8 +50,10 @@
 ### Development
 
 <div>
-vs, html, js, css
-<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white"/>&nbsp
+<img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white"/>&nbsp
+<img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white"/>&nbsp
+<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white"/>&nbsp
 </div>
 
 <br>
