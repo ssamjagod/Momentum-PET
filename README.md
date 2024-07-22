@@ -1,22 +1,22 @@
 # Momentum-PET
 
-<div align="center">
+<div align="left">
 <img src="https://github.com/user-attachments/assets/35335986-fd47-426c-94c1-54707a99dd46" width = "700" height = "500">
 </div>
 <br>
-수행과제2 : Frontend 개발, JavaScript 프로그래밍, 웹페이지 동적 제어, DOM 조작
+<b>수행과제</b> : Frontend 개발, JavaScript 프로그래밍, 웹페이지 동적 제어, DOM 조작
 <br>
-프로젝트 명 : 반려견 종합정보 웹페이지
+<b>프로젝트 명</b> : 반려견 종합정보 웹페이지
 <br>
-기술 Stack : HTML,JS,CSS , Jquery, Bootstrap, 카카오 API
+<b>기술 Stack</b> : HTML,JS,CSS , Jquery, Bootstrap, 카카오 API
 <br>
-목적 : API, Jquery 등 다양한 기술 경험 및 HTML,JS,CSS 를 통해 웹페이지 구성
+<b>목적</b> : API, Jquery 등 다양한 기술 경험 및 HTML,JS,CSS 를 통해 웹페이지 구성
 <br>
-주요기능 : 카카오 API 지도 기능, 검색 및 리스트 추가
+<b>주요기능</b> : 카카오 API 지도 기능, 검색 및 리스트 추가
 <br>
-성과 : 다양한 새로운 기술(jquery,api,bootstrap) 경험 및 DOM구조 이해
+<b>성과</b> : 다양한 새로운 기술(jquery,api,bootstrap) 경험 및 DOM구조 이해
 <br>
-협업능력 : 한가지 동일한 주제에 대한 팀원들과 기능 및 구성을 설계 후 구현하면서 소통능력 향상
+<b>협업능력</b> : 한가지 동일한 주제에 대한 팀원들과 기능 및 구성을 설계 후 구현하면서 소통능력 향상
 <br>
 
 ## 프로젝트 소개
@@ -52,7 +52,7 @@
 <br>
 
 ## 주요 기능
-**팔로우 간의 게시물 공유**
+**# 팔로우 간의 게시물 공유**
 - 사용자는 글을 등록, 삭제, 수정할 수 있습니다.
 - 사용자는 글 공개 여부를 설정할 수 있습니다.
 - 메인 화면에서 글은 팔로우를 우선적으로 보여줍니다. (팔로우가 아닌 사람의 글은 모든 팔로우의 글을 보여준 후에 보여집니다.)
@@ -60,14 +60,14 @@
 
 <br>
   
-**팔로우 간의 채팅**
+**# 팔로우 간의 채팅**
 - 사용자는 채팅을 통해 팔로우 간의 소통을 할 수 있습니다.
 - 팔로우가 아닌 사람과는 채팅 할 수 없습니다.
 - 사용자는 최대 프로필 3개를 사용하여 독립적으로 채팅 할 수 있습니다.
 
 <br>
 
-## ERD
+## 요구사항 명세서
 <div>
-  <img src="https://github.com/user-attachments/assets/a3d905be-60b2-459f-85c4-c816bd3c8983">
+  <img src="https://github.com/user-attachments/assets/58fec819-5ac6-41d3-b85b-fb0a921c52b7">
 </div>
