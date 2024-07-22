@@ -40,13 +40,6 @@
 <br>
 
 ## 개발 환경
-### Environment
-
-<div>
-<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white"/>
-<img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white"/>
-</div>
-
 ### Development
 
 <div>
