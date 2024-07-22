@@ -1,4 +1,4 @@
-# Momentum-PET
+# :dog2: Momentum-PET
 
 <div align="left">
 <img src="https://github.com/user-attachments/assets/35335986-fd47-426c-94c1-54707a99dd46" width = "700" height = "500">
@@ -19,12 +19,12 @@
 <b>협업능력</b> : 한가지 동일한 주제에 대한 팀원들과 기능 및 구성을 설계 후 구현하면서 소통능력 향상
 <br>
 
-## 프로젝트 소개
+## :loudspeaker: 프로젝트 소개
  API, Jquery 등 다양한 기술 경험 및 HTML,JS,CSS 를 통해 웹페이지 구성한 반려견 분양 웹페이지입니다.
 
 <br>
 
-## 팀원 구성
+## :sunglasses: 팀원 구성
 <div align="left">
 
 | **문형욱** |
@@ -34,12 +34,12 @@
 
 <br>
 
-## 개발 기간
+## :date: 개발 기간
 *2024.05.02 ~ 2024.05.27*
 
 <br>
 
-## 개발 환경
+## :computer: 개발 환경
 ### Development
 
 <div>
@@ -51,7 +51,7 @@
 
 <br>
 
-## 주요 기능
+## :pencil2: 주요 기능
 **# 팔로우 간의 게시물 공유**
 - 사용자는 글을 등록, 삭제, 수정할 수 있습니다.
 - 사용자는 글 공개 여부를 설정할 수 있습니다.
@@ -67,7 +67,7 @@
 
 <br>
 
-## 요구사항 명세서
+## :pencil: 요구사항 명세서
 <div>
   <img src="https://github.com/user-attachments/assets/58fec819-5ac6-41d3-b85b-fb0a921c52b7">
 </div>
