@@ -67,6 +67,7 @@
 
 <br>
 
+
 ## :pencil: 요구사항 명세서
 <div>
   <img src="https://github.com/user-attachments/assets/58fec819-5ac6-41d3-b85b-fb0a921c52b7">
@@ -76,38 +77,39 @@
 ### 메인화면 <br>
 > #### 메인페이지
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/6dc7b962-657d-4012-92f2-14aae2206a75" width = "700" height = "500" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/68492e64-9c79-4e1a-b3a8-11438830c1f3" width = "700" height = "500" border="20px solid black"/>  </kbd>
 </div>
 
 ### 회원가입/로그인 <br>
+
 > #### 모달창 이용하여 로그인/회원가입 구현
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/763c911a-444b-41f1-b23b-49366bb7c5e5" width = "300" height = "300" border="20px solid black"/>  </kbd>
-  <kbd> <img src="https://github.com/user-attachments/assets/8ebbd3e7-f6ad-4361-8400-e06a552e88c5" width = "300" height = "300" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/ee871fd0-fe9d-4c92-a716-42987fe72c40" width = "300" height = "300" border="20px solid black"/>  </kbd>
+  <kbd> <img src="https://github.com/user-attachments/assets/01d32ec9-a75f-4ab5-827c-e888b9874eb5" width = "300" height = "300" border="20px solid black"/>  </kbd>
 </div>
 
 ### 회사소개 및 반려견 화면 <br>
 > #### Header 와 Footer는 고정시키고 Body만 바꿔주면서 웹페이지 동기방식처럼 구현
 > #### 카카오 API 를 이용하여 지도 기능 구현
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/1144c7da-d014-4367-bede-ae0161772089" width = "400" height = "600" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/dc8ddb99-1ba9-40d9-9ebe-817c937ef284" width = "700" height = "500" border="20px solid black"/>  </kbd>
 </div>
 
 ### 입양신청 <br>
 > #### 입양신청 양식에 맞춰 입력 후 입양신청
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/80a626e0-e174-4d78-962b-33cbd1beec60" width = "700" height = "500" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/00a19abe-95a8-4955-ac95-be41124f106f" width = "700" height = "500" border="20px solid black"/>  </kbd>
 </div>
 
 ### 검색 <br>
 > #### 관심리스트 테이블 이동 구현
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/8388f021-79ac-454c-a504-058fd9cd35ba" width = "500" height = "100" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/367b8425-c31b-488a-ab98-683f2005c6ba" width = "700" height = "500" border="20px solid black"/>  </kbd>
 </div>
 
 ### 관심리스트 <br>
 > #### 관심리스트 체크박스 삭제 기능 구현 
 <div>
- <kbd> <img src="https://github.com/user-attachments/assets/8388f021-79ac-454c-a504-058fd9cd35ba" width = "500" height = "100" border="20px solid black"/>  </kbd>
+ <kbd> <img src="https://github.com/user-attachments/assets/c9a3a31c-4104-4a8e-b4ca-be8db1a0af07" width = "700" height = "500" border="20px solid black"/>  </kbd>
 </div>
 
