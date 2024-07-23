@@ -71,3 +71,43 @@
 <div>
   <img src="https://github.com/user-attachments/assets/58fec819-5ac6-41d3-b85b-fb0a921c52b7">
 </div>
+
+## :pencil: 주요 기능 화면
+### 메인화면 <br>
+> #### 메인페이지
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/6dc7b962-657d-4012-92f2-14aae2206a75" width = "700" height = "500" border="20px solid black"/>  </kbd>
+</div>
+
+### 회원가입/로그인 <br>
+> #### 모달창 이용하여 로그인/회원가입 구현
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/763c911a-444b-41f1-b23b-49366bb7c5e5" width = "300" height = "300" border="20px solid black"/>  </kbd>
+  <kbd> <img src="https://github.com/user-attachments/assets/8ebbd3e7-f6ad-4361-8400-e06a552e88c5" width = "300" height = "300" border="20px solid black"/>  </kbd>
+</div>
+
+### 회사소개 및 반려견 화면 <br>
+> #### Header 와 Footer는 고정시키고 Body만 바꿔주면서 웹페이지 동기방식처럼 구현
+> #### 카카오 API 를 이용하여 지도 기능 구현
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/1144c7da-d014-4367-bede-ae0161772089" width = "400" height = "600" border="20px solid black"/>  </kbd>
+</div>
+
+### 입양신청 <br>
+> #### 입양신청 양식에 맞춰 입력 후 입양신청
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/80a626e0-e174-4d78-962b-33cbd1beec60" width = "700" height = "500" border="20px solid black"/>  </kbd>
+</div>
+
+### 검색 <br>
+> #### 관심리스트 테이블 이동 구현
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/8388f021-79ac-454c-a504-058fd9cd35ba" width = "500" height = "100" border="20px solid black"/>  </kbd>
+</div>
+
+### 관심리스트 <br>
+> #### 관심리스트 체크박스 삭제 기능 구현 
+<div>
+ <kbd> <img src="https://github.com/user-attachments/assets/8388f021-79ac-454c-a504-058fd9cd35ba" width = "500" height = "100" border="20px solid black"/>  </kbd>
+</div>
+
